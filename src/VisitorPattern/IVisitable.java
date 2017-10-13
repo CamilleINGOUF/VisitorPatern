@@ -1,3 +1,4 @@
+package VisitorPattern;
 
 public interface IVisitable 
 {

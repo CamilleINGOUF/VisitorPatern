@@ -17,6 +17,6 @@ public class Main
 		for(IVisitable product : caddy)
 			product.accept(priceOpe);
 		
-		System.out.println("Total price is "+priceOpe.totalPrice+" ");
+		System.out.println("Total price is "+priceOpe.totalPrice+" €");
 	}
 }

@@ -14,6 +14,7 @@ public class MP3 implements IVisitable
 	
 	public float getPrice()
 	{
+		System.out.println("[!] Ball - getPrice");
 		return price;
 	}
 	

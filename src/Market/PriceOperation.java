@@ -2,7 +2,7 @@ package Market;
 
 import VisitorPattern.IVisitor;
 
-public class Cashier implements IVisitor 
+public class PriceOperation implements IVisitor 
 {
 	float totalPrice = 0;
 	

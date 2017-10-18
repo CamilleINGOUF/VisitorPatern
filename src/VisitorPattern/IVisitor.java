@@ -1,10 +1,10 @@
 package VisitorPattern;
 
-import Market.Ball;
-import Market.MP3;
+import Market.ConcreteVisitable1;
+import Market.ConcreteVisitable2;
 
 public interface IVisitor 
 {
-	public abstract void visit(MP3 m);
-	public abstract void visit(Ball ball);
+	void visit(ConcreteVisitable1 c);
+	void visit(ConcreteVisitable2 c);
 }

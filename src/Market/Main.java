@@ -8,19 +8,19 @@ public class Main
 {
 	public static void main(String[] args) 
 	{
-		ArrayList<IVisitable> caddy = new ArrayList<IVisitable>();
-		caddy.add(new MP3());
-		caddy.add(new Ball(3));
+		ArrayList<IVisitable> elements = new ArrayList<IVisitable>();
 		
-		PriceOperation priceOpe = new PriceOperation();
-		SomethingOperation somethingOpe = new SomethingOperation();
+		elements.add(new ConcreteVisitable1());
+		elements.add(new ConcreteVisitable2());
+		elements.add(new ConcreteVisitable2());
 		
-		for(IVisitable product : caddy)
+		ConcreteVisitor1 v1 = new ConcreteVisitor1();
+		ConcreteVisitor2 v2 = new ConcreteVisitor2();
+		
+		for(IVisitable v : elements)
 		{
-			product.accept(priceOpe);
-			product.accept(somethingOpe);
+			v.accept(v1);
+			v.accept(v2);
 		}
-		
-		System.out.println("Total price is "+priceOpe.totalPrice+" €");
 	}
 }
